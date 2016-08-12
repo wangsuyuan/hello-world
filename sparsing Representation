@@ -5,3 +5,26 @@ Image Processing , Vol 16, No 11, pp 2675--2681, 2007
 #M. Aharon, M. Elad, and A.M. Bruckstein, “The K-SVD: An algorithm for designing of
 overcomplete dictionaries for sparse representation,” IEEE Trans. Signal Processing,
 vol. 54, no. 11, pp. 4311-4322, Nov. 2006.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Representative image restoration methods%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+K. Dabov, A. Foi, V. Katkovnik, and K. Egiazarian, “Image denoising by sparse 3-d
+transform-domain collaborative filtering," TIP 2007. (BM3D)
+• J. Mairal, F. Bach, J. Ponce, G. Sapiro, and A. Zisserman, “Non-local sparse models
+for image restoration," ICCV 2009. (LSSC)
+• J. Yang, J. Wright, T. Huang and Y. Ma, “Image super-resolution via sparse
+representation,” TIP 2010. (ScSR)
+• D. Zoran and Y. Weiss, “From learning models of natural image patches to whole
+image restoration,” ICCV 2011. (EPLL)
+• W. Dong, L. Zhang, G. Shi and X. Wu, “Image deblurring and supper-resolution by
+adaptive sparse domain selection and adaptive regularization,” TIP 2011. (ASDS)
+• S. Wang, L. Zhang, Y. Liang and Q. Pan, “Semi-Coupled Dictionary Learning with
+Applications to Image Superresolution and Photo-Sketch Image Synthesis,” CVPR
+2012. (SCDL)
+• W. Dong, L. Zhang, G. Shi, and X. Li, “Nonlocally Centralized Sparse Representation
+for Image Restoration,” TIP 2013. (NCSR)
+
+W. Dong, L. Zhang and G. Shi, “Centralized Sparse Representation for
+Image Restoration”, in ICCV 2011.
+W. Dong, L. Zhang, G. Shi and X. Li, “Nonlocally Centralized Sparse
+Representation for Image Restoration”, IEEE Trans. on Image Processing,
+vol. 22, no. 4, pp. 1620-1630, April 2013.
