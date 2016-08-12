@@ -1,3 +1,7 @@
-J. Bobin, J.-L. Starck J. Fadili, Y. Moudden and D.L Donoho, "Morphological
+#J. Bobin, J.-L. Starck J. Fadili, Y. Moudden and D.L Donoho, "Morphological
 Component Analysis: an adaptive thresholding strategy", IEEE Transactions on
 Image Processing , Vol 16, No 11, pp 2675--2681, 2007
+
+#M. Aharon, M. Elad, and A.M. Bruckstein, “The K-SVD: An algorithm for designing of
+overcomplete dictionaries for sparse representation,” IEEE Trans. Signal Processing,
+vol. 54, no. 11, pp. 4311-4322, Nov. 2006.
