@@ -1,0 +1,32 @@
+function status = dicom2bmp(infilename)
+
+I=dicomread(infilename);   %读取图像
+
+metadata=dicominfo(infilename); %存储信息
+
+lop=length(metadata.WindowCenter);%查看窗位数量
+
+if(lop~=length(metadata.WindowWidth))%与窗位数量是否一致
+
+    error('this is an error');
+
+end
+
+for i=1:lop
+
+    center=metadata.WindowCenter(i)/metadata.RescaleSlope - metadata.RescaleIntercept;%处理窗位数值，这个地方的处理很关键
+
+    width=metadata.WindowWidth(i)/metadata.RescaleSlope - metadata.RescaleIntercept;%处理窗宽数值，这个地方的处理很关键
+
+    M=mat2gray(I,[center-(width/2),center+(width/2)]);%归一化
+
+    a=strcat(infilename,num2str(i));
+
+    a=strcat(a,'.bmp');%输出文件名的操作
+
+     imwrite(M,a,'bmp');%输出为文件
+
+     subplot(1,lop,i),imshow(a),title(a);%显示
+
+end
+end
