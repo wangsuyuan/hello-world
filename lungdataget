@@ -1,0 +1,46 @@
+close all;
+clc;
+clear;
+
+date='partSolid';
+material='LIDC-IDRI-';
+distance = 0.20;
+% distance = 0.214777;
+% path=fullfile('D:','WuJie','experiment data','compressed sensing',date);
+% path= fullfile('\\tsclient\D\Database\information of new DB\information of new DB\images\partSolid\LIDC-IDRI-0045-03',date);
+% path2=fullfile('\\tsclient\D\Database\information of new DB\information of new DB\images\partSolid\LIDC-IDRI-0045-03',date);
+path= fullfile('\\tsclient\D\Database\information of new DB\information of new DB\images\partSolid\LIDC-IDRI-0045-03');
+path2=fullfile('\\tsclient\D\Database\information of new DB\information of new DB\images\partSolid\LIDC-IDRI-0045-03');
+allFile=dir(fullfile(path,'*.jpg'));
+outname =fullfile(path,[material,date,'.txt']);
+ fid = fopen(outname, 'wt');
+%  DataCell{size(allFile,1),1} = [];
+ for i=1:1:size(allFile,1)
+    filename=allFile(i).name;
+    newname =fullfile(path,[material,date,num2str(i),'.jpeg']);
+
+%     newname =fullfile(path2,[material,num2str(i),'.jpeg']);
+%     newname =fullfile(path,[material,'.'num2str(i),'.jpeg']);
+    image=imread(fullfile(path, filename));
+    imwrite(image,newname);
+    imagematrix=im2double(imread(newname));
+   %     imagematrix=imread(fullfile(path, filename));
+    imagecolum=imagematrix(:);
+    imagecolum=imagecolum';
+   
+    fprintf(fid, '%6.4f\t', imagecolum);
+    fprintf(fid, '\n');
+
+%     DataCell{i,1} = imagecolum';
+    actualimage =reshape(imagecolum,size(imagematrix));
+%     actualimage2=im2uint8(actualimage);
+%     imshow(actualimage);
+% imwrite(actualimage,newname);
+%     imshow(newname);
+ end
+ fclose(fid);
+ 
+% 
+%  csvwrite(outname,DataCell);
+% save outname DataCell -ascii
+% cell2mat(DataCell);
