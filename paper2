@@ -1,0 +1,135 @@
+CT
+(FUJIFILM) Content-based image-retrieval system in chest computed tomography for a solitary pulmonary nodule - method and preliminary experiments.pdf
+(IEEE Trans 2014) HEp-2 cell classification using shape index histograms with donut-shaped spatial pooling.pdf
+(MICCAI 08)(y) Estimation of Ground-Glass Opacity Measurement in CT Lung Images.pdf
+(MICCAI 09)(y) Multi-level ground glass nodule detection and segmentation in CT lung images.pdf
+(MICCAI 2006)(y) automatic detection and segmentation of ground glass opacity nodules.pdf
+(Radiology)(y) Malignant versus Benign Nodules at CT screening for lung cancer comparison of thin-section CT findings.pdf
+(y) Decision Making in Patients with Pulmonary Nodules.pdf
+(y) Texture versus Shape Analysis for Lung Nodule Similarity in computed tomography studies.pdf
+1.bat
+ipcv-master
+ipcv-master.zip
+LIST.TXT
+Semantics and Image Content Integration for Pulmonary Nodule Interpretation in Thoracic Computer Tomography.pdf
+数据集 (y)-- The Lung Image Database Consortium (LIDC) and Image Database Resource Intiative (IDRI) A Completed Reference Database of Lung Nodules on CT Scans.pdf
+
+
+deepface
+1.bat
+Deep Learning in Object Detection,Segmentation and Recognition.pdf
+Deeply learned face representations are sparse, selective, and robust_Xiaoou Tang_CVPR2015.pdf
+Face Alignment at 3000 FPS via Regressing Local Binary Features_CVPR2014.pdf
+FaceNet A Unified Embedding for Face Recognition and Clustering_CVPR2015.pdf
+LIST.TXT
+Multi-Objective Convolutional Learning for Face Labeling_CVPR2015.pdf
+Multilinear Analysis of Image Ensembles TensorFaces.pdf
+Multilinear Image Analysis for Facial Recognition.pdf
+Multilinear Subspace Analysis of Image Ensembles.pdf
+Rotating Your Face Using Multi-task Deep Neural Network_CVPR2015.pdf
+Web-Scale Training for Face Identification_CVPR2015.pdf
+
+
+diffuse lung disease
+1.bat
+A Sparse Representation Based Method to Classify Pulmonary Patterns of Diffuse Lung Diseases.pdf
+Automated classification of lung bronchovascular anatomy in CT using AdaBoost..pdf
+Clinical significance of respiratory bronchiolitis on open lung biopsy and its relationship to smoking related interstitial lung disease.pdf
+clinical value of high-resolution CT in chronic diffuse lung disease.pdf
+Diffuse Cystic Lung Disease at High Resolution CT.pdf
+Diffuse Lung Disease CT of the Chest with Adaptive Statistical Iterative Reconstruction Technique.pdf
+Feature Based Classifiation Of Lung Tissues For Lung Disease Diagnosis.pdf
+FRDC
+HRCT diagnosis of diffuse parenchymal lung disease inter-observer variation.pdf
+Inter-observer variation between pathologists in diffuse parenchymal lung disease.pdf
+LIST.TXT
+Multi_detector Row CT and Postprocessing Techiniques in the Assessment of Diffuse Lung Disease.pdf
+paperlist.docx
+Polymeositis-Dermatomyositis-associated Interstitial Lung Disease.pdf
+Quantitative computerized analysis of diffuse lung disease in high-resolution computed tomography.pdf
+read.txt
+Transbrochial Biopsy in diffuse lung disease.pdf
+[13 XU] A Bag-of-Features Approach to Classify Six Type of Pulmonary Tex....pdf
+
+FRDC
+1.bat
+A new classifier fusion method based on historical and on-line classification reliability for recognizing common CT imaging signs of lung diseases.pdf
+A practical approach to high-resolution CT of diffuse lung disease.pdf
+Accuracy of high-resolution CT in the diagnosis of diffuse lung disease effect of predominance.pdf
+Automated CT image evaluation of the lung a morphology-based concept.pdf
+Automatic detection of hilum and parenchymal bands on HRCT lungimages.pdf
+Base lung sound in diffuse interstitial pneumonia analyzed by linear and nonlinear techniques.pdf
+Combining the Gabor and histogram features for classifying diffuselung opacities in thin-section computed tomography.pdf
+Computed tomography of diffuse lung disease functional correlates.pdf
+CT evaluation of diffuse infiltrative lung disease dose considerations and optimal technique.pdf
+Diffuse lung disease classification in HRCT lung images using generalized Gaussian density modeling of wavelets coefficients.pdf
+Discrimination of ground glass opacity on lung HRCT images using visual complexity measurements.pdf
+Feature selection methods of the combined feature vector for classifying diffuse lung opacities in thin section computed tomography.pdf
+Fractal analysis for computer-aided diagnosis of diffuse pulmonary diseases in HRCT images.pdf
+Gaussian mixture modeling for statistical analysis of features of high-resolution CT images of diffuse pulmonary diseases.pdf
+High resolution computed tomography of diffuse lung disease.pdf
+HRCT diagnosis of diffuse parenchymal lung disease inter-observer variation.pdf
+Inter-observer variation between pathologists in diffuse parenchymal lung disease.pdf
+Investigation of 3D textural features' discriminating ability indiffuse lung disease quantification in MDCT.pdf
+LIST.TXT
+Multiple kernel learning for classification of diffuse lung diseaseusing HRCT lung images.pdf
+Multiscale sparse representation of high-resolution computed tomography (HRCT) lung images for diffuse lung diseaseclassification.pdf
+The anisotropic Gaussian kernel for SVM classification of HRCT images of the lung.pdf
+
+DNN
+1.bat
+convolutional clustering for unsupervised learning.pdf
+Deep Learning using Linear Support Vector Machines.pdf
+Deeply-Supervised Nets.pdf
+exploiting linear structure within convolutional networks for efficient evaluation_NIPS2014.pdf
+Highway Networks.pdf
+LIST.TXT
+One weird trick for parallelizing convolutional neural networks.pdf
+Speeding up Convolutional Neural Networks with low rank expansion_BMVC2014.pdf
+StochasticNet Forming Deep Neural Networks via Stochastic Connectivity.pdf
+Training Very Deep Networks.pdf
+
+
+fine grained image
+1.bat
+A Codebook-Free and Annotation-Free Approach for Fine-Grained Image Categorization_Feifei Li_CVPR2012.pdf
+A Database for Fine Grained Activity Detection of Cooking Activities_CVPR2012.pdf
+Beyond Spatial Pooling fine-grained representation learning in multiple domains_CVPR2015.pdf
+Birdsnap Large-scale Fine-grained Visual Categorization of Birds_CVPR2014.pdf
+Building a bird recognition app and large scale dataset with citizen scientists the fine print in fine-grained dataset collection_CVPR2015.pdf
+Combining Randomization and Discrimination for Fine-Grained Image Categorization_Feifei Li_CVPR2011.pdf
+Deep Domain Adaptation for Describing People Based on Fine-Grained Clothing Attributes_Shuicheng Yan_CVPR2015.pdf
+Deep LAC Deep Localization, Alignment and Classification for Fine-Grained Recognition.pdf
+Deformable Part Descriptors for Fine-grained Recognition and Attribute Prediction_ICCV2013.pdf
+Discovering Localized Attributes for Fine-grained Recognition_CVPR2012.pdf
+Efficient Object Detection and Segmentation for Fine-Grained Recognition_CVPR2013.pdf
+Evaluation of Output Embeddings for Fine-Grained Image Classification_CVPR2015.pdf
+Fine-Grained Categorization by Alignments_ICCV2013.pdf
+Fine-Grained Crowdsourcing for Fine-Grained Recognition_Feifei Li_CVPR2013.pdf
+Fine-Grained Histopathological Image Analysis via Robust Segmentation and Large-Scale Retrieval_CVPR2015.pdf
+Fine-Grained Recognition without Part Annotations_Feifei Li-CVPR2015.pdf
+Fine-Grained Visual Categorization via Multi-stage Metric Learning_CVPR2015.pdf
+Fine-Grained Visual Comparisons with Local Learning_CVPR2014.pdf
+Geting Hotspot from “ICE“_Kaiqi Huang.pdf
+Hierarchical Part Matching for Fine-Grained Visual Categorization_Shuicheng Yan_ICCV2013.pdf
+Hyper-class Augmented and Regularized Deep Learning for Fine-Grained Image Classification_CVPR2015.pdf
+Hypercolumns for Object Segmentation and Fine-grained Localization_CVPR2015.pdf
+Interaction Part Mining A Mid-Level Approach for Fine-Grained Action_CVPR2015.pdf
+Jointly Optimizing 3D Model Fitting and Fine_grained Classification_ECCV2014.pdf
+Learning Fine-grained Image Similarity with Deep Ranking_CVPR2014.pdf
+LIST.TXT
+Multi-Attribute Spaces Calibration for Attribute Fusion and Similarity Search_CVPR2012.pdf
+Multiple Granularity Analysis for Fine-grained Action Detection_CVPR2014.pdf
+Nonparametric Part Transfer for Fine-grained Recognition_CVPR2014.pdf
+Ontological Supervision for Fine Grained Classification of Street View storefronts_CVPR2015.pdf
+Part-based R-CNNs for Fine-grained Category Detection_ECCV2014.pdf
+Pipelining Localized Semantic Features for Fine-grained Action Recognition_ECCV2014.pdf
+Similarity Comparisons for Interactive Fine-Grained Categorization_CVPR2014.pdf
+Symbiotic Segmentation and Part Localization for Fine-Grained Categorization_ICCV2013.pdf
+The Application of Two-level Attention Models in Deep Convolutional Neural Network for Fine-Grained Image Classification_CVPR2015.pdf
+Understanding Objects in Detail with Fine-grained Attributes_CVPR2014.pdf
+Vantage Feature Frames For Fine-Grained Categorization_CVPR2013.pdf
+Which Looks Like Which Exploring Inter-Class Relationships in Fine-Grained Visual Categorization_ECCV2014.pdf
+
+
+
