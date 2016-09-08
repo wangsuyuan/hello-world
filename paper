@@ -1,0 +1,54 @@
+autoencoding
+Adaptive Deconvolutional Networks for Mid and High Level Feature Learning_iccv2011
+
+cell segement
+Iterative_voting_for_inference_of_structural_saliency_and_characterization_of_subcellular_e
+Robust Segmentation of Overlapping Cells in Histopathology Specimens Using Parallel Seed Detection and Repulsive Level Set
+
+classification and location
+1.bat
+An Active Search Strategy for Efficient Object Class Detection_CVPR2015.pdf
+Caffe Convolutional Architecture for Fast Feature Embedding.pdf
+Convolutional Feature Masking for Joint Object and Stuff Segmentation_JianSun_Microsoft_CVPR2015.pdf
+Convolutional Neural Networks at Constrained Time Cost_JianSun_MicroSoft_CVPR2015.pdf
+Deep Learning Tutorial.pdf
+Deep Learning Tutorial_lecun-ranzato-icml2013.pdf
+Deep Multiple Instance Learning for Image Classification and Auto-Annotation_CVPR2015.pdf
+Deep Neural Networks are Easily Fooled High Confidence Predictions for Unrecognizable Images_CVPR2015.pdf
+Deep Residual Learning for Image Recognition_KaimingHe.pdf
+Deep Roto-Translation Scattering for Object Classification_CVPR2014.pdf
+DeepID-Net Deformable Deep Convolutional Neural Networks_Xiaoou Tang_CVPR2015.pdf
+Deformable Part Models are Convolutional Neural Networks_Microsoft_CVPR2015.pdf
+Efficient and Accurate Approximations of Nonlinear Convolutional Networks_Jian Sun_CVPR2015.pdf
+Efficient Object Localization Using Convolutional Networks_CVPR2014.pdf
+End-to-End Integration of a Convolutional Network,Deformable Parts Model and Non-Maximum suppression_CVPR2015.pdf
+Fast R-CNN.pdf
+Faster R-CNN Towards Real-Time Object Detection with Region Proposal Networks.pdf
+Fisher Vectors Meet Neural Networks A Hybrid Classification Architecture_CVPR2015.pdf
+From Categories to Subcategories Large-scale Image Classification with Partial Class Label Refinement.pdf
+Fully Convolutional Networks for Semantic Segmentation_UC Berkeley_CVPR2015.pdf
+Going Deeper with Convolutions_CVPR2015.pdf
+Gradient-Based Learning Applied to Document Recognition_Lenet5.pdf
+Hypercolumns for Object Segmentation and Fine-grained Localization_Berkeley_CVPR2015.pdf
+ImageNet Classification with Deep Convolutional Neural Network_Hinton_2012.pdf
+ImageNet Large Scale Visual Recognition Challenge.pdf
+Improving Object Detection with Deep Convolutional Networks Via Bayescian Optimation and Structured Predicition.pdf
+Inside-Outside Net Detecting Objects in Context with Skip Pooling and Recurrent Neural Network.pdf
+Is object localtion for free Weakly-supervised learning with convolutional neural networks_INRIA_CVPR2015.pdf
+Learning from Massive Noisy Labeled Data for Image Classification_Xiaogang Wang_CVPR2015.pdf
+Learning hierarchical features for scene labeling.pdf
+LIST.TXT
+Material Recognition in the Wild with the Materials in Context Database_CVPR2015.pdf
+Mid-level Deep Pattern Mining_CVPR2015.pdf
+Modeling Local and Global Deformations in Deep Learning Epitomic Convolution,Multiple Instance Learning, and Sliding Window Detection_Google_CVPR2015.pdf
+Object Detection by Labeling Superpixels_Stan Li_CVPR2015.pdf
+Object detection via a multi-region & semantic segmentation-aware CNN model.pdf
+On the Relationship between Visual Attributes and Convolutional Networks_CVPR2015.pdf
+OverFeat Integrated Recognition, Localization and detection using convolution networks.pdf
+Recurrent Convolutional Neural Network for Object Recognition_CVPR2015.pdf
+Regionlets for Generic Object Detection_ICCV2013.pdf
+Rich feature hierarchies for accurate object detection and semantic segmentation_CVPR2014.pdf
+segDeepM Exploiting Segmentation and Context in Deep Neural Networks for object detection_Toronto_CVPR2014.pdf
+selective search for objective recognition_IJCV2013.pdf
+Sparse Convolutional Neural Networks_CVPR2015.pdf
+Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition.pdf
