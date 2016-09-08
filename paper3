@@ -1,0 +1,202 @@
+Hessian matrix
+1.bat
+Differential Geometry.pdf
+LIST.TXT
+Principal Hessian Directions.pdf
+Second Order Partial Derivatives; the Hessian Matrix; Minima and Maxima.pdf
+The Hessian matrix and its eigenvalues .pdf
+The Hessian matrix Eigenvalues, concavity, and curvature.pdf
+
+
+image description
+1.bat
+LIST.TXT
+Long-term Recurrent Convolutional Networks for Visual Recognition and Description.pdf
+
+
+image retrieval
+1.bat
+Bayes Merging of Multiple Vocabularies for Scalable Image Retrieval_CVPR2014.pdf
+Bayes Merging of Multiple Vocabularies for Scalable Image Retrieval_supplementary material.pdf
+Data-driven Visual Similarity for Cross-domain Image Matching.pdf
+Deep Semantic Ranking Based Hashing for Multi-Label Image Retrieval_TieNiu Tan_CVPR_2015.pdf
+Early burst detection for memory-efficient image retrieval_CVPR2015_Inria.pdf
+FAemb a function approximation-based embedding method for image retrieval_CVPR2015.pdf
+Image Retrieval using Scene Graphs_CVPR2015.pdf
+LDAHash Improved matching with smaller descriptors.pdf
+Learning visual similarity for product design with convolutional neural networks.pdf
+LIST.TXT
+Mobile_Visual_Search.pdf
+Object retrieval and localization with spatially-constrained similarity measure and k-nn re-ranking_CVPR2012.pdf
+Open-vocabulary Object Retrieval_RSS-2014.pdf
+Packing and Padding Coupled Multi-index for Accurate Image Retrieval_CVPR2014.pdf
+Revisiting Kernelized Locality-Sensitive Hashing for Improved Large-Scale Image Retrieval_CVPR2015.pdf
+Supervised Hashing with Kernels.ppt
+基于内容的大规模图像检索关键技术研究_华中科大_陈永健.pdf
+新建文本文档.txt
+
+
+matching
+1.bat
+DeepShape Deep Learned Shape Descriptor for 3D Shape Matching and Retrieval_CVPR2015.pdf
+LIST.TXT
+MatchNet Unifying Feature and Metric Learning for Patch-Based Matching_CVPR_2015.pdf
+
+
+matrix tensor completion
+1.bat
+an incomplete survey of matrix completion.pdf
+LIST.TXT
+Tensor Completion Via Optimization on the Product of Matrix Manifolds.pdf
+Tensor Completion.pdf
+张量分解.PPT
+张量补全算法及其在人脸识别中的应用.pdf
+
+
+metric learning
+1.bat
+A Hybrid Algorithm for Convex Semidefinite Optimization_ICML2012.pdf
+A Statistical Model of Riemannian Metric Variation for Deformable Shape Analysis_CVPR2015.pdf
+An Efficient Algorithm for Local Distance Metric Learning.pdf
+An Overview of Distance Metric Learning.pdf
+Beyond Mahalanobis Metric Cayley-Klein Metric Learning_CVPR2015.pdf
+Complexity-Adaptive Distance Metric for Object Proposals Generation_CVPR2015.pdf
+CVPR15_metric_part1&2_JiwenLu.pdf
+CVPR15_metric_part3_Wei-ShiZheng.pdf
+CVPR15_metric_part4_RuipingWang.pdf
+CVPR15_metric_part5_JiwenLu.pdf
+Deep Transfer Metric Learning_CVPR2015.pdf
+Dense, Accurate Optical Flow Estimation with Piecewise Parametric Model_CVPR2015.pdf
+Distance Function and Metric Learning_ECCV2010_tutorial_part_1_v3.pdf
+Distance Functions and Metric Learning_ECCV2010_tutorial_part_2.pdf
+distance metric learning A comprehensive survey .pdf
+Distance Metric Learning for Large Margin Nearest Neighbor Classification_LMNN.pdf
+Distance metric learning with application to clustering with side-information_Eric Xing_2002.pdf
+Distance Metric Learning with Kernels_ICANN_2003.pdf
+Distance Metric Learning.pdf
+Fast Solvers and Efficient Implementations for Distance Metric Learning_ICML2008.pdf
+Information-Theoretic Metric Learning_ICML2007.pdf
+Information-theoretic Semi-supervised Metric Learning via Entropy Regulatizaiton_ICML2012.pdf
+Information-Theoretical Learning of Discriminative Clusters for Unsupervised Domain Adaptation_ICML2012.pdf
+Information-Theoretic_Metric_Learning_ICML2007.pdf
+Learning a Distance Metric from Relative_NIPS2003.pdf
+Learning Discriminative Fisher Kernels_ICML2011.pdf
+learning distance function algorithms and application.pdf
+Learning Distance Function using Equivalence Relations.pdf
+Learning Distance Metrics with Contextual Constraints for Image Retrieval.pdf
+Learning globally consistent local distance functions for shape based image retrieval and classfication_ICCV2007.pdf
+Learning Multi-View Neighborhood Preserving Projections_ICML2011.pdf
+Learning Similarity Metrics for Dynamic Scene Segmentation_CVPR2015.pdf
+Learning to rank in person re-identification with metric ensembles_CVPR2015.pdf
+Learning with Idealized Kernels_ICML2003.pdf
+LIST.TXT
+Maximum Margin Output Coding_ICML2012.pdf
+MDS.pdf
+Metric imitation by manifold transfer for efficient vision applications_CVPR2015.pdf
+Metric Learning by Collapsing Classes_NIPS2005.pdf
+Multi-Manifold Deep Metric Learning for Image Set Classification_CVPR2015.pdf
+Neighbourhood Components Analysis.pdf
+On Kernelizing Mahalanobis Distance Learning Algorithms_2008.pdf
+Projection Metric Learning on Grassmann Manifold with Application to Video Based Face Recognition_CVPR2015.pdf
+Similarity Learning for Provably Accurate Sparse Linear Classification_ICML2012.pdf
+Small-Variance Nonparametric Clustering on the Hypersphere_CVPR2015.pdf
+Smart Indexing via Learning Based Hashing.pdf
+The Pre-Image Problem in Kernel Methods_ICML2003.pdf
+机器学习_相似度度量.ppt
+
+
+patch compare
+1.bat
+Learning to Compare Image Patches via Convolutional Neural Networks_CVPR2014.pdf
+LIST.TXT
+
+
+
+proposal
+1.bat
+BING Binarized Normed Gradients for Objectness Estimation at 300fps.pdf
+BING++ A Fast High Quality Object Proposal Generator at 100fps.pdf
+Cracking BING and Beyond.pdf
+Edge Boxes Locating object proposal from edges.pdf
+elastic edge boxes for object proposal on RGB_D images.pdf
+Learning to Propose Objects_CVPR2015.pdf
+Learning to Segment Object Candidates_NIPS2015.pdf
+LIST.TXT
+Measuring_the_Objectness_of_Image_Windows.pdf
+Multiscale Combinatorial Grouping_CVPR2014.pdf
+Prime Object Proposals with Randomized Prim’s Algorithm.pdf
+RIGOR Reusing Inference in Graph Cuts for Generating Object Regions_2014_CVPR_paper.pdf
+Segmentation as Selective Search for Object Recognition_ICCV2011.pdf
+What makes for effective detection proposals.pdf
+You Only Look Once unified,real time object detection.pdf
+
+
+saliency detection
+1.bat
+Deep Networks for Saliency Detection via Local Estimation and Global Search_CVPR2015.pdf
+LIST.TXT
+Saliency Detection by Multi-Context Deep Learning_Xiaogang Wang_CVPR2015.pdf
+Saliency Detection via Cellular Automata_CVPR2015.pdf
+Salient Object Detection A Survey.pdf
+Salient Object Detection via Bootstrap Learning_CVPR2015.pdf
+Salient Object Subitizing_CVPR2015.pdf
+Visual Saliency Based on Multiscale Deep Features_CVPR2015.pdf
+Weakly Supervised Learning for Salient Object Detection.pdf
+
+
+scene
+1.bat
+Integrating Parametric and Non-parametric Models For Scene Labeling_CVPR2015.pdf
+LIST.TXT
+Scene Classification with Semantic Fisher Vectors_CVPR2015.pdf
+Scene Labeling with LSTM Recurrent Neural Networks_CVPR2015.pdf
+
+semantic segmentation
+1.bat
+A FAST LEARNING ALGORITHM FOR IMAGE SEGMENTATION WITH MAX-POOLING convolution neural nwtwork-icip2013.pdf
+BoxSup Exploiting Bounding Boxes to Supervise Convolutional Networks for Semantic Segmentation_ICCV_2015.pdf
+Decoupled Deep Neural Network for Semi-supervised Semantic Segmentation_NIPS2015.pdf
+From Image-level to Pixel-level Labeling with Convolutional Networks_CVPR2015.pdf
+Fully Convolutional Multi-Class Multiple Instance Learning.pdf
+Fully Convolutional Networks for Semantic Segmentation_UC Berkeley_CVPR2015.pdf
+Learning Deconvolution Network for Semantic Segmentation_ICCV2015.pdf
+LIST.TXT
+Recurrent Convolutional Neural Networks for Scene Labeling-icml2014.pdf
+Semantic Image Segmentation With Deep Convolutional Nets and fully connected CRFS.pdf
+Simultaneous Detection and Segmentation_ECCV2014.pdf
+Weakly Supervised Semantic Segmentation with Convolutional Networks.pdf
+Weakly- and Semi-Supervised Learning of a DCNN for Semantic Image Segmentation.pdf
+
+superpixel
+1.bat
+Efficient Graph-Based Image Segmentation.pdf
+LIST.TXT
+
+texture
+1.bat
+Deep Filter Banks for Texture Recognition and Segmentation_CVPR2015.pdf
+Fusing Subcategory Probabilities for Texture Classification_CVPR2015.pdf
+LIST.TXT
+
+visualizing high-dimensional data
+1.bat
+LIST.TXT
+tSNE_matlab.zip
+tsne_python.zip
+visualizing data using t-sne.pdf
+
+
+肺结节相关
+1.bat
+137.pdf
+anatomy-specific classification of medical images using deep convolutional nets.pdf
+Decoding tumour phenotype by noninvasive imaging using aquantitative radiomics approach_2013_nature communication.pdf
+Decoding tumour phenotype by noninvasive imaging using aquantitative radiomics approach_2013_naturecommunication_Supplementary Information.pdf
+deep convolutional networks for pancreas segmentation in ct image.pdf
+Discovery Radiomics for Computed Tomography Cancer Detection.pdf
+Discovery Radiomics via StochasticNet Sequencers for Cancer Detection.pdf
+improving computer-aided detection using convolutional neural networks and Random View aggregation.pdf
+LIST.TXT
+Reproducibility and Prognosis of Quantitative features extracted from CT images.pdf
+Supplement_Reproducibility and Prognosis of Quantitative Features Extracted from CT Images.pdf
+
