@@ -1,0 +1,77 @@
+clear;
+clc;
+close all;
+
+filename='testData.noSize.24-06.xlsx';
+A = importdata(filename);
+totalData=A.data;
+dataNameArray=char(A.textdata);
+
+distance=10;
+step=1;
+startRow=distance/10;
+numberOfTotalData=size(totalData,1);
+dataForFigure=totalData(startRow:step:numberOfTotalData,:);
+nameForFigure=dataNameArray(startRow:step:numberOfTotalData,:);
+numberOfClass=size(dataForFigure,1);
+figure;
+b=zeros(numberOfClass,1);
+content_legend=cell(numberOfClass,1);
+markerColor=jet(numberOfClass);
+basic_Markers=cellstr(char('o','x','+','*','s','d','v','^','<','>','p','h','.'));
+Markers=repmat(basic_Markers,ceil(numberOfClass/numel(basic_Markers)),1);
+line_width=1.5;
+marker_size=5;
+totalPdf=zeros(numberOfClass,round(max(max(dataForFigure))));
+totalValue=zeros(numberOfClass,round(max(max(dataForFigure))));
+for i=1:numberOfClass
+%     currentData=round(dataForFigure(i,:));
+    currentData=dataForFigure(i,:);
+    maxDataIndex=find(currentData==max(currentData));
+    minDataIndex=find(currentData==min(currentData));
+    currentData(maxDataIndex)=ceil(max(currentData));
+    currentData(minDataIndex)=floor(min(currentData));
+    currentName=nameForFigure(i,:);
+    minValue=min(currentData);
+    maxValue=max(currentData);
+    pdfRange=maxValue-minValue;
+    [h,centers]=hist(currentData,pdfRange);
+%     hist(currentData,pdfRange,'facecolor',markerColor(i,:));
+    currentPdf=h/(sum(h));
+    pdfStep=(maxValue-minValue)/pdfRange;
+    for j=minValue:maxValue-1
+        totalPdf(i,j)=currentPdf(j-minValue+1);
+        totalValue(i,j)=h(j-minValue+1);
+    end
+%     totalPdf(i,:)=currentPdf;
+%     totalValue(i,:)=[minValue:pdfStep:maxValue];
+%     b(i)=bar(minValue:pdfStep:maxValue-1,currentPdf,'facecolor',markerColor(i,:),'barwidth',1);
+    b(i)=bar(centers,currentPdf,'facecolor',markerColor(i,:),'barwidth',1,'linewidth',line_width);
+%     b(i)=bar(minValue:pdfStep:maxValue-1,currentPdf,'facecolor','w','edgecolor',markerColor(i,:),'barwidth',1);
+%     b(i)=bar(totalPdf(i,:),'facecolor',markerColor(i,:),'barwidth',1);
+%     b(i)=plot(totalPdf(i,:),'color',markerColor(i,:),...
+%         'MarkerSize',marker_size,...
+%         'Marker',Markers{i},...
+%         'linewidth',line_width);
+%     b(i)=area(minValue:pdfStep:maxValue,currentPdf,'facecolor',markerColor(i,:));
+%     b(i)=patch([minValue,minValue:pdfStep:maxValue-1,maxValue-1],[0,currentPdf,0],markerColor(i,:));
+%     plotyy(minValue:pdfStep:maxValue-1,currentPdf,minValue:pdfStep:maxValue-1,currentPdf,'plot','bar');
+    content_legend{i}=currentName;
+    hold on;
+    alpha(.5);
+end
+legend(b,content_legend);
+% [tempValue,xAxisValue]=find(totalPdf>0);
+% xlim([min(xAxisValue)-1,max(xAxisValue)+1]);
+% set(gca,'XTick',min(xAxisValue):1:max(xAxisValue));
+% set(gca,'XTickLabel',min(xAxisValue):1:max(xAxisValue)-1);
+
+%calculate detection rate
+detectionRate=zeros(numberOfClass,1);
+for i=1:numberOfClass
+    for j=1:size(totalPdf,2)
+        if sum(totalPdf(:,j))==totalPdf(i,j)
+            detectionRate(i)=detectionRate(i)+totalPdf(i,j);
+        end
+    end
+end
