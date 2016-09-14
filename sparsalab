@@ -1,0 +1,166 @@
+close all;
+clc;
+clear;
+
+date='20160729_24.14';
+material='oil';
+% material='empty';
+% sizeOfMaterial='big';
+sizeOfMaterial='middle';
+
+
+
+distance = 0.20;
+% distance = 0.214777;
+% path=fullfile('D:','WuJie','experiment data','compressed sensing',date);
+path= fullfile('D:','wangsuyuan','24GHz signal processing','experiment data','compressed sensing',date);
+
+allFile=dir(fullfile(path,[date,'.',material,'.',sizeOfMaterial,'.mat']));
+dataFile=allFile.name;
+load(fullfile(path,dataFile));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cw1 = num2str(f1/1e9);
+cw2 = num2str(f2/1e9);
+
+deltaPhi1 =distance*4*pi*(f2-f1)/3e8; % when phi1 > phi2
+degreePhi1=180*deltaPhi1/pi;
+deltaPhi2 =(distance-3e8/(2*(f2-f1)))*4*pi*(f2-f1)/3e8+2*pi;% when phi1< phi2
+%deltaPhi2 =(distance-3e8/(2*(f2-f1)))*4*pi*(f2-f1)/3e8;% when phi1< phi2
+degreePhi2=180*deltaPhi2/pi;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+I_ave_channel1 = I_ave(:,1)  ;
+Q_ave_channel1 = Q_ave(:,1) ;
+numberOfFile=size(I_ave_channel1,1);
+unit =ones(numberOfFile,1);
+
+M=numberOfFile;
+N=128;
+K=8;
+sigma=3;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            y = awgn(x,10,'measured');
+Phi_I_channel1=sigma*randn(M,N);   %  测量矩阵(高斯分布白噪声)64*256的扁矩阵，Phi也就是文中说的D矩阵
+%             Phi_I=wgn(M,N,0.01,'linear');%noise power in dBW
+s_I_channel1=[I_ave_channel1 ];
+%OMP and CSOMP results are different
+%way 1 using OMP to solve no-constraint problem
+% [I_channel1_reconstruct_omp] = OMP( s_I_channel1,Phi_I_channel1,K )  ;
+%way 2 using CSOMP to solve no-constraint problem
+% [I_channel1_reconstruct_csomp] = CSOMP( s_I_channel1,Phi_I_channel1,M,N,K )  ;
+% OMP and CSOMP are the same ,in this program,we use SpaRSA.
+%way3 using SpaRSA to solve no-constraint problem when tau = 0
+%way1 and way 2 results sparse vector, they are the same
+%way3 results 128 all have values, it seems way3 is more  appropriate
+tau = 0; tolA = 1e-6;
+[I_channel1_reconstruct_sparsa,x_debias_sparsa,obj_sparsa,...
+    times_sparsa,debias_start_sparsa,mse_sparsa]= ...
+    SpaRSA(s_I_channel1,Phi_I_channel1,tau,...
+    'Debias',0,...
+     'Monotone',1,...
+    'Initialization',1,...
+    'StopCriterion',1,...
+    'ToleranceA',tolA,...
+    'Verbose', 0);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Phi_Q_channel1=sigma*randn(M,N);
+s_Q_channel1=[Q_ave_channel1 ];
+%OMP and CSOMP results are different
+%way 1 using OMP to solve no-constraint problem
+% [Q_channel1_reconstruct_omp] = OMP( s_Q_channel1,Phi_Q_channel1,K )  ;
+%way 2 using CSOMP to solve no-constraint problem
+% [Q_channel1_reconstruct_csomp] = CSOMP( s_Q_channel1,Phi_Q_channel1,M,N,K )  ;
+%way3 using SpaRSA to solve no-constraint problem when tau = 0
+tau = 0; tolA = 1e-6;
+[Q_channel1_reconstruct_sparsa,x_debias_sparsa,obj_sparsa,...
+    times_sparsa,debias_start_sparsa,mse_sparsa]= ...
+    SpaRSA(s_Q_channel1,Phi_Q_channel1,tau,...
+    'Debias',0,...
+     'Monotone',1,...
+    'Initialization',1,...
+    'StopCriterion',1,...
+    'ToleranceA',tolA,...
+    'Verbose', 0);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%find observe matrix of phase
+phase_channel1_reconstruct_sparsa = atan2(Q_channel1_reconstruct_sparsa,I_channel1_reconstruct_sparsa);
+
+s_phase_channel1=atan2( Q_ave_channel1,I_ave_channel1);
+
+[U,S,V]=svd(phase_channel1_reconstruct_sparsa);
+T=S;
+T(find(S~=0))=1./S(find(S~=0));
+svdInvphase_channel1_reconstruct=V*T'*U';
+Phi_phase = s_phase_channel1*svdInvphase_channel1_reconstruct;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I_ave_channel2 = I_ave(:,2)  ;
+Q_ave_channel2 = Q_ave(:,2) ;
+numberOfFile=size(I_ave_channel2,1);
+unit =ones(numberOfFile,1);
+M=numberOfFile;
+N=20;
+K=7;
+%the observe matrix of phase1 and phase2 are the same
+%which is Phi_phase
+s_phase_channel2=[atan2(Q_ave_channel2,I_ave_channel2) ];
+x0=phase_channel1_reconstruct_sparsa -deltaPhi1;
+
+%For phase2 the problem becomes constraint problem
+%which is phase2=arg min |Ax-y|_2 + tau |x-x0|_1 
+%                                phase   
+% %      xe = arg min 0.5*||A x-y||^2 + tau ||x||_1
+% %                      x
+% % Psi = @(x,th) soft(x,th);   % denoising function
+% % Phi = @(x)    sum(abs(x(:)));     % regularizer
+Psi = @(x,th) soft(x,th);
+Phi = @(x)    sum(abs(x(:))); 
+% regularization parameter 
+tau =0.1;
+% convergence tolerance
+tolA = 1e-6;
+%y=A*x0-y
+y=-Phi_phase*x0+s_phase_channel2;
+
+[x,x_debias_sparsa,obj_sparsa,...
+      times_sparsa,debias_start_sparsa,mse_sparsa]= ...
+    SpaRSA(y,Phi_phase,tau,...
+    'Debias',0,...
+    'Phi',Phi,...
+    'Psi',Psi,...
+    'Monotone',1,...
+    'Initialization',1,...
+    'StopCriterion',1,...
+    'ToleranceA',tolA,...
+    'Verbose', 0);
+
+phase_channel2_reconstruct_sparsa=x+x0;
+
+
+phase_channel1_value =atan2(Q_ave_channel1,I_ave_channel1);
+phase_channel2_value =atan2(Q_ave_channel2,I_ave_channel2);
+
+delta_value =phase_channel1_value - phase_channel2_value;
+delta_reconstruct = phase_channel1_reconstruct_sparsa - phase_channel2_reconstruct_sparsa;
+
+deltaPhi_new =phase_channel1_reconstruct_sparsa - phase_channel2_reconstruct_sparsa;
+
+if  deltaPhi_new <0
+    F=2*pi*lambda1/(lambda1-lambda2)+(lambda1.*phase_channel1_reconstruct_sparsa...
+        -lambda2.*phase_channel2_reconstruct_sparsa )/(lambda1-lambda2);
+else
+    F=(lambda1.*phase_channel1_reconstruct_sparsa...
+        -lambda2.*phase_channel2_reconstruct_sparsa)/(lambda1-lambda2);
+end
+
+% F=(lambda1.*phase_channel1_reconstruct_sparsa -lambda2.*phase_channel2_reconstruct_sparsa)/(lambda1-lambda2);
+
+
+
+
+
+
+
+
+
+
+
